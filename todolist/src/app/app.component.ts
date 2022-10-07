@@ -18,10 +18,9 @@ export class AppComponent {
       this.task = '';
     }
   }
-
-
-
-
+  remove(taskremover:string){
+    this.list_task=this.list_task.filter((task) => task !==taskremover)
+  }
 
 
 }

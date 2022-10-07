@@ -2,6 +2,6 @@
   <label>Digite a Tarefa: </label>
   <input type="text" id="username" name="username" [(ngModel)]="task">
   <button (click)="addTodo()">Adicionar</button>
-  <app-list [list_task]="list_task"></app-list>
+  <app-list [list_task]="list_task" (tasktoremove)="remove($event)"></app-list>
 </div>
 

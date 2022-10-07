@@ -1,7 +1,14 @@
 <div>
-  <ul *ngFor=" let item of list_task">
-    <li>{{item}}</li>
-  </ul>
-
-
+  <div *ngFor=" let item of list_task">
+    <ul>
+      <li>
+        {{item}}
+      </li>
+      <button (click)="tasktoremovetask(item)">
+        Excluir
+      </button>
+    </ul>
+  </div>
 </div>
+
+
